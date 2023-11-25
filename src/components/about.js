@@ -6,25 +6,12 @@ function About({open, toggleModal}) {
   const cancelButtonRef = useRef(null);
 
   const maintainer = {
-    name: "Diky Hadna",
-    username: "@dkhd",
-    link: "https://github.com/dkhd",
+    name: "Ronit Bhansali",
+    username: "@Ronit26x",
+    link: "https://github.com/Ronit26x/summerly",
     avatar_url: "https://avatars.githubusercontent.com/u/3040839?v=4"
   };
-  const contributors = [
-    {
-      name: "Sander Nobel",
-      username: "@sano2019",
-      link: "https://github.com/sano2019",
-      avatar_url: "https://avatars.githubusercontent.com/u/53917461?v=4"
-    },
-    {
-      name: "Jeff Canale",
-      username: "@je-poy",
-      link: "https://github.com/je-poy",
-      avatar_url: "https://avatars.githubusercontent.com/u/19700174?v=4"
-    },
-  ];
+  const contributors = [];
 
   const handleCloseModal = () => {
     toggleModal(false);
@@ -72,17 +59,14 @@ function About({open, toggleModal}) {
                 About
               </div>
               <div className="bg-nord6 text-justify sm:p-4 sm:pb-2">
-                Winterly Tab is an open source chrome extension to beautifully
-                change your new tab page with winter-themed background.
+                Summerly Tab is an open source chrome extension to beautifully
+                change your new tab page with summer-themed background.
               </div>
               <div className="bg-nord6 sm:p-4 sm:pb-2">
                 <div className="sm:flex sm:items-center sm:justify-center align-middle font-medium text-xl">
-                  Maintainer:
+                  Developer:
                 </div>
                 <div className="sm:flex sm:justy-items-center sm:justify-center">
-                  <div className="flex-shrink-0 h-12 w-12 sm:items-center">
-                    <img className="h-12 w-12 rounded-full" src={maintainer.avatar_url} alt="DH" />
-                  </div>
                   <div className="flex ml-4 sm:items-center">
                     <div className="font-medium text-gray-900">
                       {maintainer.name} &nbsp;
@@ -95,9 +79,7 @@ function About({open, toggleModal}) {
                     </div>
                   </div>
                 </div>
-                <div className="sm:flex sm:items-start font-medium sm:justify-center mt-5 text-xl">
-                  Contributors:
-                </div>
+                
                 <div className="flex flex-col sm:justify-center gap gap-1 ">
                   {contributors.map((c,index) => {
                     return (
@@ -124,7 +106,7 @@ function About({open, toggleModal}) {
                 </div>
                 <div className="font-bold text-lg pt-3 text-nord10 mt-5">
                   <a
-                    href="https://github.com/dkhd/winterly-tab"
+                    href="https://github.com/Ronit26x/summerly"
                     className="flex flex-row justify-center items-center gap-1"
                   >
                     <span>Github</span>
