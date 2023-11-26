@@ -3,7 +3,7 @@ import axios from "axios";
 export const retrieveImage = async () => {
   let image = await axios.get("https://api.unsplash.com/photos/random?collections=3403106,3174571&content_filter=high",{
     headers: {
-      Authorization:"Client-ID HZUbRLoQXpv28VMYdx1AyHymycZBsJJ9g2rQODcHBDA",
+      Authorization:"Client-ID FR47rrlPkzD9wa_MPOEbLmwfOrCOFtcyQ_vEtgapPi0",
     }
   });
   console.log(image.data)
