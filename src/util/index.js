@@ -2,7 +2,7 @@ import axios from "axios";
 
 export const retrieveImage = async () => {
   // let image = await axios.get("https://api.unsplash.com/photos/random?beach",{
-    let image = await axios.get("https://source.unsplash.com/random?summer",{
+    let image = await axios.get("https://api.unsplash.com/search/collections?page=1&query=beach",{
     headers: {
       Authorization:"Client-ID FR47rrlPkzD9wa_MPOEbLmwfOrCOFtcyQ_vEtgapPi0",
     }
